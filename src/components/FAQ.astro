@@ -1,0 +1,94 @@
+---
+import Icon from './Icon.astro';
+---
+
+<section
+  class="section surface faq-section"
+  id="preguntas"
+  aria-labelledby="faq-title"
+>
+  <div class="site-container faq-grid">
+    <div class="section-copy">
+      <span class="eyebrow">Resolvemos tus dudas</span>
+      <h2 id="faq-title">
+        Antes de tu visita,
+        <br /> <span class="accent-text">hablemos claro.</span>
+      </h2>
+      <p>
+        Queremos que te sientas cómodo con cada paso, incluso antes de llegar.
+      </p>
+      <a class="faq-contact" href="#contacto" data-whatsapp="question">
+        <span class="round-icon">
+          <Icon name="message" />
+        </span>
+        <span>
+          ¿Tienes otra pregunta?<strong>Platiquemos de tu sonrisa</strong>
+        </span>
+        <Icon name="whatsapp" class="whatsapp-icon" />
+      </a>
+    </div>
+    <div class="accordion">
+      <details open>
+        <summary>
+          ¿Cómo solicito una valoración?
+          <span class="plus" aria-hidden="true"></span>
+        </summary>
+        <p>
+          Escríbenos por WhatsApp o completa el formulario para preparar tu
+          solicitud. Podrás revisar el mensaje antes de enviarlo; el horario se
+          confirma con la clínica.
+        </p>
+      </details>
+      <details>
+        <summary>
+          ¿Qué sucede en la primera consulta?
+          <span class="plus" aria-hidden="true"></span>
+        </summary>
+        <p>
+          Comenzamos por escuchar tus necesidades, revisar tu sonrisa y
+          explicarte las opciones que podrían corresponder a tu caso.
+        </p>
+      </details>
+      <details>
+        <summary>
+          ¿Cómo puedo conocer el costo de un tratamiento?
+          <span class="plus" aria-hidden="true"></span>
+        </summary>
+        <p>
+          El presupuesto se define a partir de la valoración y del plan
+          propuesto. La demo no presenta precios de una clínica real.
+        </p>
+      </details>
+      <details>
+        <summary>
+          ¿Puedo acudir si me da nervio ir al dentista?
+          <span class="plus" aria-hidden="true"></span>
+        </summary>
+        <p>
+          Puedes compartir tus inquietudes desde el primer contacto. En Brisa
+          Dental ponemos especial atención en escuchar y explicar cada paso.
+        </p>
+      </details>
+      <details>
+        <summary>
+          ¿Necesito saber qué tratamiento elegir?
+          <span class="plus" aria-hidden="true"></span>
+        </summary>
+        <p>
+          No. Puedes seleccionar “Quiero orientación” al solicitar tu
+          valoración.
+        </p>
+      </details>
+      <details>
+        <summary>
+          ¿Puedo elegir el día de mi cita?
+          <span class="plus" aria-hidden="true"></span>
+        </summary>
+        <p>
+          Puedes indicar un día de preferencia. En un servicio real, el horario
+          necesitaría confirmación por parte de la clínica.
+        </p>
+      </details>
+    </div>
+  </div>
+</section>

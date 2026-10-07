@@ -1,0 +1,102 @@
+---
+import Icon from './Icon.astro';
+---
+
+<section class="section testimonials" aria-labelledby="testimonials-title">
+  <div class="site-container testimonial-layout">
+    <div class="testimonial-intro">
+      <span class="eyebrow">Sentirte acompañado</span>
+      <h2 id="testimonials-title">
+        La confianza
+        <br /> también <span class="accent-text">se escucha.</span>
+      </h2>
+      <p>Pequeños detalles que hacen una gran diferencia en tu visita.</p>
+      <div class="testimonial-controls">
+        <button
+          class="round-button"
+          type="button"
+          data-testimonial="previous"
+          aria-label="Opinión anterior"
+        >
+          <Icon name="arrow" />
+        </button>
+        <button
+          class="round-button"
+          type="button"
+          data-testimonial="next"
+          aria-label="Siguiente opinión"
+        >
+          <Icon name="arrow" />
+        </button>
+        <span id="testimonial-position" aria-live="polite">
+          01 / 03
+        </span>
+      </div>
+    </div>
+    <div
+      class="testimonial-stage"
+      aria-roledescription="carrusel"
+      aria-label="Opiniones de ejemplo"
+    >
+      <article class="testimonial-slide" data-slide="0" aria-label="1 de 3">
+        <span class="large-quote" aria-hidden="true">
+          “
+        </span>
+        <blockquote>
+          Me explicaron todo con calma y pude preguntar sin sentirme apurada.
+        </blockquote>
+        <div class="patient">
+          <span class="avatar">DM</span>
+          <div>
+            <h3>Daniela M.</h3>
+            <p>Una atención que inspira confianza</p>
+          </div>
+        </div>
+      </article>
+      <article
+        class="testimonial-slide"
+        data-slide="1"
+        aria-label="2 de 3"
+        hidden
+      >
+        <span class="large-quote" aria-hidden="true">
+          “
+        </span>
+        <blockquote>
+          Lo que más me gustó fue entender las opciones antes de tomar una
+          decisión.
+        </blockquote>
+        <div class="patient">
+          <span class="avatar">CR</span>
+          <div>
+            <h3>Carlos R.</h3>
+            <p>Una conversación con claridad</p>
+          </div>
+        </div>
+      </article>
+      <article
+        class="testimonial-slide"
+        data-slide="2"
+        aria-label="3 de 3"
+        hidden
+      >
+        <span class="large-quote" aria-hidden="true">
+          “
+        </span>
+        <blockquote>
+          Desde la primera visita sentí un trato cercano y mucha claridad.
+        </blockquote>
+        <div class="patient">
+          <span class="avatar">PG</span>
+          <div>
+            <h3>Paola G.</h3>
+            <p>Acompañamiento desde el inicio</p>
+          </div>
+        </div>
+      </article>
+      <p class="fine-print">
+        Opiniones ficticias de ejemplo para mostrar el diseño.
+      </p>
+    </div>
+  </div>
+</section>

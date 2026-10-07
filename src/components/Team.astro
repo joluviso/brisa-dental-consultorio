@@ -1,0 +1,49 @@
+---
+import Icon from './Icon.astro';
+import { team } from '../data/content';
+---
+
+<section class="section" id="equipo" aria-labelledby="team-title">
+  <div class="site-container">
+    <div class="section-heading centered">
+      <span class="eyebrow">Nuestro equipo</span>
+      <h2 id="team-title">
+        Personas que cuidan
+        <br /> de <span class="accent-text">tu sonrisa.</span>
+      </h2>
+      <p>La confianza empieza por saber quién te acompaña.</p>
+    </div>
+    <div class="three-grid team-grid">
+      {team.map((item) => (
+        <article class="team-card">
+          <div class="team-image">
+            <img
+              src={item.image}
+              width={item.width}
+              height={item.height}
+              alt={item.alt}
+              loading="lazy"
+            />
+          </div>
+          <div class="team-caption">
+            <div>
+              <h3>
+                {item.title.map((line, index) => (
+                  <>
+                    {index > 0 && <br />}
+                    {line}
+                  </>
+                ))}
+              </h3>
+              <p>{item.description}</p>
+            </div>
+            <Icon name="spark" />
+          </div>
+        </article>
+      ))}
+    </div>
+    <p class="fine-print centered">
+      Perfiles ilustrativos para esta demostración.
+    </p>
+  </div>
+</section>

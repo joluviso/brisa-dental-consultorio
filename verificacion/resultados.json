@@ -1,0 +1,88 @@
+{
+  "viewports": [
+    {
+      "viewport": 360,
+      "documentWidth": 360,
+      "overflow": false,
+      "brokenImages": [],
+      "h1Count": 1,
+      "fontsReady": true,
+      "heroFont": "34.4px",
+      "bodyFont": "16px"
+    },
+    {
+      "viewport": 390,
+      "documentWidth": 390,
+      "overflow": false,
+      "brokenImages": [],
+      "h1Count": 1,
+      "fontsReady": true,
+      "heroFont": "35.1px",
+      "bodyFont": "16px"
+    },
+    {
+      "viewport": 768,
+      "documentWidth": 768,
+      "overflow": false,
+      "brokenImages": [],
+      "h1Count": 1,
+      "fontsReady": true,
+      "heroFont": "34.4px",
+      "bodyFont": "16.736px"
+    },
+    {
+      "viewport": 1024,
+      "documentWidth": 1024,
+      "overflow": false,
+      "brokenImages": [],
+      "h1Count": 1,
+      "fontsReady": true,
+      "heroFont": "46.08px",
+      "bodyFont": "17.248px"
+    },
+    {
+      "viewport": 1440,
+      "documentWidth": 1440,
+      "overflow": false,
+      "brokenImages": [],
+      "h1Count": 1,
+      "fontsReady": true,
+      "heroFont": "58px",
+      "bodyFont": "18px"
+    },
+    {
+      "viewport": 390,
+      "documentWidth": 390,
+      "overflow": false,
+      "brokenImages": [],
+      "h1Count": 1,
+      "fontsReady": true,
+      "heroFont": "68.8px",
+      "bodyFont": "32px",
+      "textScale": "200%"
+    },
+    {
+      "viewport": 1440,
+      "documentWidth": 1440,
+      "overflow": false,
+      "brokenImages": [],
+      "h1Count": 1,
+      "fontsReady": true,
+      "heroFont": "84px",
+      "bodyFont": "33.28px",
+      "textScale": "200%"
+    }
+  ],
+  "checks": [
+    "Todos los CTAs de contacto abren WhatsApp con el número configurado; las tarjetas incluyen el tratamiento. Enlaces interceptados localmente.",
+    "El encabezado permanece visible al desplazarse en escritorio.",
+    "Comparadores: imagen y descripción accesible responden al teclado.",
+    "Testimonios: controles anterior y siguiente funcionan.",
+    "Preguntas frecuentes: apertura y cierre coherentes.",
+    "Formulario: validación y apertura de WhatsApp con un borrador que contiene los datos. No envía mensajes automáticamente.",
+    "Menú móvil: anclas sin quedar ocultas; CTA inferior fijo y oculto mientras se editan campos.",
+    "Sin JavaScript: navegación visible y formulario desactivado de forma segura."
+  ],
+  "errors": [],
+  "externalRequests": []
+}

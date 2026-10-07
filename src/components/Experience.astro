@@ -1,0 +1,42 @@
+---
+import Icon from './Icon.astro';
+---
+
+<section class="experience" aria-labelledby="experience-title">
+  <img
+    class="experience-image"
+    src="/assets/images/case-study-image-2.webp"
+    width="1200"
+    height="800"
+    alt=""
+    loading="lazy"
+  />
+  <div class="site-container experience-inner">
+    <span class="eyebrow eyebrow-light">Una experiencia más cercana</span>
+    <h2 id="experience-title">
+      Tu próxima visita puede
+      <br /> <span>sentirse diferente.</span>
+    </h2>
+    <p>
+      Un equipo que te escucha, un espacio que transmite calma y la información
+      que necesitas para decidir.
+    </p>
+    <a class="button button-light" href="#contacto" data-whatsapp="team">
+      Habla con nuestro equipo <Icon name="whatsapp" class="whatsapp-icon" />
+    </a>
+  </div>
+  <div class="experience-benefits site-container">
+    <span>
+      <Icon name="heart" /> Atención cercana
+    </span>
+    <span>
+      <Icon name="spark" /> Cuidado integral
+    </span>
+    <span>
+      <Icon name="calendar" /> Plan personalizado
+    </span>
+    <span>
+      <Icon name="message" /> Seguimiento
+    </span>
+  </div>
+</section>

@@ -1,0 +1,51 @@
+---
+import Icon from './Icon.astro';
+---
+
+<section class="section about" id="nosotros" aria-labelledby="about-title">
+  <div class="site-container split-grid">
+    <div class="about-visual">
+      <img
+        class="rounded-image"
+        src="/assets/images/about-us-image.webp"
+        width="605"
+        height="617"
+        alt="Dentista conversando con una paciente durante su atención"
+        loading="lazy"
+      />
+      <div class="quote-card">
+        <span class="quote-mark" aria-hidden="true">
+          “
+        </span>
+        <p>
+          Queremos que salgas con menos dudas y <strong>más confianza.</strong>
+        </p>
+        <span class="small-label">EL COMPROMISO BRISA</span>
+      </div>
+      <span class="image-label">Cuidado que empieza por escucharte.</span>
+    </div>
+    <div class="section-copy">
+      <span class="eyebrow">Conoce Brisa Dental</span>
+      <h2 id="about-title">
+        Cuidamos tu sonrisa.
+        <br /> <span class="accent-text">También cómo te sientes.</span>
+      </h2>
+      <p>
+        Sabemos que ir al dentista puede generar dudas. Por eso nos tomamos el
+        tiempo de escucharte, explicarte cada paso y ayudarte a elegir con
+        tranquilidad.
+      </p>
+      <ul class="check-list">
+        <li>Valoración enfocada en tus necesidades.</li>
+        <li>Opciones de tratamiento explicadas con claridad.</li>
+        <li>Seguimiento cercano durante tu atención.</li>
+      </ul>
+      <div class="soft-callout">
+        Tu atención comienza con una conversación y un plan claro.
+      </div>
+      <a class="button" href="#contacto" data-whatsapp="team">
+        Habla con nuestro equipo <Icon name="whatsapp" class="whatsapp-icon" />
+      </a>
+    </div>
+  </div>
+</section>

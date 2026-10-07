@@ -1,0 +1,156 @@
+---
+import Icon from './Icon.astro';
+---
+
+<section
+  class="section appointment-section"
+  id="contacto"
+  aria-labelledby="appointment-title"
+>
+  <div class="site-container appointment-grid">
+    <div class="appointment-photo">
+      <img
+        src="/assets/images/book-appointment-image.webp"
+        width="1440"
+        height="810"
+        alt="Paciente durante su consulta de valoración dental"
+        loading="lazy"
+      />
+      <div class="appointment-photo-copy">
+        <Icon name="heart" />
+        <p>
+          Una conversación.
+          <br /> Muchas razones
+          <br /> para <span>sonreír.</span>
+        </p>
+      </div>
+    </div>
+    <div class="appointment-panel">
+      <span class="eyebrow">Agenda tu valoración</span>
+      <h2 id="appointment-title">
+        El primer paso
+        <br /> es <span class="accent-text">conocernos.</span>
+      </h2>
+      <p>Cuéntanos qué necesitas. Será un gusto acompañarte.</p>
+      <form id="appointment-form" novalidate>
+        <fieldset disabled>
+          <div class="form-grid">
+            <div class="field">
+              <label for="name">
+                Nombre completo <span aria-hidden="true">*</span>
+              </label>
+              <input
+                id="name"
+                name="name"
+                autocomplete="name"
+                placeholder="¿Cómo te llamas?"
+                required
+                minlength="2"
+                aria-describedby="name-error"
+              />
+              <span class="field-error" id="name-error"></span>
+            </div>
+            <div class="field">
+              <label for="phone">
+                Teléfono <span aria-hidden="true">*</span>
+              </label>
+              <input
+                id="phone"
+                name="phone"
+                type="tel"
+                autocomplete="tel"
+                inputmode="tel"
+                placeholder="Tu número a 10 dígitos"
+                required
+                aria-describedby="phone-error"
+              />
+              <span class="field-error" id="phone-error"></span>
+            </div>
+            <div class="field">
+              <label for="email">
+                Correo <span class="optional">(opcional)</span>
+              </label>
+              <input
+                id="email"
+                name="email"
+                type="email"
+                autocomplete="email"
+                placeholder="hola@ejemplo.com"
+                aria-describedby="email-error"
+              />
+              <span class="field-error" id="email-error"></span>
+            </div>
+            <div class="field">
+              <label for="date">
+                Día de preferencia <span aria-hidden="true">*</span>
+              </label>
+              <input
+                id="date"
+                name="date"
+                type="date"
+                required
+                aria-describedby="date-error"
+              />
+              <span class="field-error" id="date-error"></span>
+            </div>
+            <div class="field full-width">
+              <label for="treatment">
+                Tratamiento de interés <span aria-hidden="true">*</span>
+              </label>
+              <select
+                id="treatment"
+                name="treatment"
+                required
+                aria-describedby="treatment-error"
+              >
+                <option value="">Selecciona una opción</option>
+                <option>Valoración general</option>
+                <option>Limpieza y prevención</option>
+                <option>Brackets y alineadores</option>
+                <option>Implantes dentales</option>
+                <option>Extracciones dentales</option>
+                <option>Quiero orientación</option>
+              </select>
+              <span class="field-error" id="treatment-error"></span>
+            </div>
+            <div class="field full-width">
+              <label for="message">
+                ¿Qué te gustaría contarnos?{' '}
+                <span class="optional">(opcional)</span>
+              </label>
+              <textarea
+                id="message"
+                name="message"
+                rows="2"
+                maxlength="600"
+                placeholder="Cuéntanos tus dudas o el motivo de tu visita"
+              ></textarea>
+            </div>
+          </div>
+          <p class="demo-notice">
+            Al continuar se abrirá WhatsApp con tu solicitud para que puedas
+            revisarla y enviarla. Tu cita se confirma con la clínica. Los campos
+            con * son obligatorios.
+          </p>
+          <button class="button form-submit" type="submit">
+            Continuar por WhatsApp{' '}
+            <Icon name="whatsapp" class="whatsapp-icon" />
+          </button>
+        </fieldset>
+        <div
+          class="form-result"
+          id="form-result"
+          role="status"
+          aria-live="polite"
+          tabindex="-1"
+          hidden
+        ></div>
+      </form>
+      <noscript>
+        <p class="demo-notice">
+          Activa JavaScript para preparar tu solicitud desde este formulario.
+        </p>
+      </noscript>
+    </div>
+  </div>
+</section>

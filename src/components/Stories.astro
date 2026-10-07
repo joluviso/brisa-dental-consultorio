@@ -1,0 +1,54 @@
+---
+import Icon from './Icon.astro';
+import { stories } from '../data/content';
+---
+
+<section class="section stories" aria-labelledby="stories-title">
+  <div class="site-container">
+    <div class="section-heading heading-row">
+      <div>
+        <span class="eyebrow">Cada sonrisa es diferente</span>
+        <h2 id="stories-title">
+          Un plan de atención
+          <br /> para <span class="accent-text">cada persona.</span>
+        </h2>
+      </div>
+      <a
+        class="button button-outline"
+        href="#contacto"
+        data-whatsapp="valuation"
+      >
+        Comienza tu historia <Icon name="whatsapp" class="whatsapp-icon" />
+      </a>
+    </div>
+    <div class="three-grid">
+      {stories.map((item) => (
+        <article class="story-card">
+          <img
+            src={item.image}
+            width={item.width}
+            height={item.height}
+            alt={item.alt}
+            loading="lazy"
+          />
+          <div class="story-copy">
+            <span class="small-label">{item.label}</span>
+            <h3>
+              {item.title.map((line, index) => (
+                <>
+                  {index > 0 && <br />}
+                  {line}
+                </>
+              ))}
+            </h3>
+            <p>{item.description}</p>
+          </div>
+        </article>
+      ))}
+    </div>
+    <p class="fine-print centered">
+      Situaciones ilustrativas; no corresponden a expedientes clínicos de Brisa
+      Dental.
+    </p>
+  </div>
+</section>

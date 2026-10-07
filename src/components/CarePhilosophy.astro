@@ -1,0 +1,61 @@
+---
+import Icon from './Icon.astro';
+---
+
+<section class="section why" aria-labelledby="why-title">
+  <div class="site-container split-grid why-grid">
+    <div class="section-copy">
+      <span class="eyebrow">Tu tranquilidad importa</span>
+      <h2 id="why-title">
+        Confianza que se construye{' '}
+        <span class="accent-text">en cada visita.</span>
+      </h2>
+      <p>
+        Queremos que sepas qué vamos a hacer, por qué lo proponemos y qué puedes
+        esperar de tu atención.
+      </p>
+      <div class="benefit-grid">
+        <div>
+          <span class="benefit-number">01 /</span>
+          <h3>Te escuchamos</h3>
+          <p>Espacio para hablar de tus dudas y expectativas.</p>
+        </div>
+        <div>
+          <span class="benefit-number">02 /</span>
+          <h3>Te explicamos</h3>
+          <p>Opciones y pasos en un lenguaje sencillo.</p>
+        </div>
+        <div>
+          <span class="benefit-number">03 /</span>
+          <h3>Planeamos contigo</h3>
+          <p>Un plan que considera tus necesidades.</p>
+        </div>
+        <div>
+          <span class="benefit-number">04 /</span>
+          <h3>Te acompañamos</h3>
+          <p>Seguimiento y orientación durante el proceso.</p>
+        </div>
+      </div>
+      <a class="button" href="#contacto" data-whatsapp="valuation">
+        Platiquemos de tu sonrisa <Icon name="whatsapp" class="whatsapp-icon" />
+      </a>
+    </div>
+    <div class="why-visual">
+      <div class="why-disc" aria-hidden="true"></div>
+      <img
+        src="/assets/images/why-choose-image.webp"
+        width="564"
+        height="653"
+        alt="Profesional sonriendo y haciendo un gesto de aprobación"
+        loading="lazy"
+      />
+      <div class="why-note">
+        <Icon name="heart" />
+        <p>
+          Aquí, lo más importante
+          <br /> <strong>es cómo te sientes.</strong>
+        </p>
+      </div>
+    </div>
+  </div>
+</section>

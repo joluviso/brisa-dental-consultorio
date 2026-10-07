@@ -1,0 +1,64 @@
+---
+import Icon from './Icon.astro';
+---
+
+<section class="hero" id="inicio" aria-labelledby="hero-title">
+  <div class="site-container hero-grid">
+    <div class="hero-copy">
+      <span class="eyebrow eyebrow-light">
+        <Icon name="spark" /> Tu sonrisa está en buenas manos
+      </span>
+      <h1 id="hero-title">
+        Atención dental cercana para <span>sonreír con confianza.</span>
+      </h1>
+      <p>
+        En Brisa Dental te escuchamos, resolvemos tus dudas y te acompañamos con
+        un plan de atención pensado para ti.
+      </p>
+      <div class="hero-actions">
+        <a
+          class="button button-light"
+          href="#contacto"
+          data-whatsapp="valuation"
+        >
+          Agenda tu valoración <Icon name="whatsapp" class="whatsapp-icon" />
+        </a>
+        <a class="text-link light-link" href="#nosotros">
+          Conoce nuestra clínica <Icon name="arrow" />
+        </a>
+      </div>
+      <div class="hero-support">
+        <span class="round-icon">
+          <Icon name="heart" />
+        </span>
+        <p>
+          Queremos que te sientas a gusto
+          <br /> <strong>desde tu primera visita.</strong>
+        </p>
+      </div>
+    </div>
+    <div class="hero-visual">
+      <div class="hero-orbit" aria-hidden="true"></div>
+      <img
+        class="hero-person"
+        src="/assets/images/hero-image.webp"
+        width="620"
+        height="751"
+        alt="Profesional de la salud sonriendo, con uniforme azul"
+        fetchpriority="high"
+      />
+      <div class="hero-note">
+        <span class="round-icon">
+          <Icon name="check" />
+        </span>
+        <span>
+          Más que una sonrisa.
+          <br /> <strong>Tu tranquilidad.</strong>
+        </span>
+      </div>
+      <div class="hero-vertical" aria-hidden="true">
+        CUIDADO CERCANO. SONRISAS CON CONFIANZA.
+      </div>
+    </div>
+  </div>
+</section>

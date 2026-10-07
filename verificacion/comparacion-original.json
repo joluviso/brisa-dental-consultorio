@@ -1,0 +1,26 @@
+{
+  "comparisons": [
+    {
+      "viewport": 390,
+      "contentMatches": true,
+      "imagesMatch": true,
+      "sectionOrderMatches": true,
+      "matchingDimensions": true,
+      "originalHeight": 17053,
+      "replicaHeight": 17053,
+      "changedPixelsPercent": 0,
+      "meanChannelDifference": 0.0073
+    },
+    {
+      "viewport": 1440,
+      "contentMatches": true,
+      "imagesMatch": true,
+      "sectionOrderMatches": true,
+      "matchingDimensions": true,
+      "originalHeight": 10888,
+      "replicaHeight": 10888,
+      "changedPixelsPercent": 0.0001,
+      "meanChannelDifference": 0.0179
+    }
+  ]
+}

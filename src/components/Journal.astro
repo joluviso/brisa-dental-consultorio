@@ -1,0 +1,40 @@
+---
+import { journal } from '../data/content';
+---
+
+<section class="section journal" aria-labelledby="journal-title">
+  <div class="site-container">
+    <div class="section-heading centered">
+      <span class="eyebrow">Hablemos de tu sonrisa</span>
+      <h2 id="journal-title">
+        Información para llegar
+        <br /> con <span class="accent-text">menos dudas.</span>
+      </h2>
+    </div>
+    <div class="three-grid">
+      {journal.map((item) => (
+        <article class="journal-card">
+          <img
+            src={item.image}
+            width={item.width}
+            height={item.height}
+            alt={item.alt}
+            loading="lazy"
+          />
+          <div>
+            <span class="small-label">{item.label}</span>
+            <h3>
+              {item.title.map((line, index) => (
+                <>
+                  {index > 0 && <br />}
+                  {line}
+                </>
+              ))}
+            </h3>
+            <p>{item.description}</p>
+          </div>
+        </article>
+      ))}
+    </div>
+  </div>
+</section>
